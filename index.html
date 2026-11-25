@@ -1,0 +1,661 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Academies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <a href="#" onclick="showPage('home'); return false;">
+            <img src="webiste photos/Logo.png" class="logo" alt="Logo">
+        </a>
+
+        <nav>
+            <button onclick="showPage('home')">Home</button>
+            <button onclick="showPage('schools')">Our Schools</button>
+            <button onclick="showPage('leadership')">Our Leadership Team</button>
+            <button onclick="showPage('directors')">Executive Directors</button>
+        </nav>
+
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+
+    </header>
+
+
+    <!-- MOBILE MENU -->
+
+    <div id="mobileMenu">
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('schools')">Our Schools</button>
+        <button onclick="showPage('leadership')">Our Leadership Team</button>
+        <button onclick="showPage('directors')">Executive Directors</button>
+    </div>
+
+
+    <!-- HOME PAGE -->
+
+    <main id="home" class="page active">
+
+        <section class="hero">
+
+            <h1>Shaping Tomorrow's Leaders Through Schools, <span style="gold"></span>Training & Academics</h1>
+
+            <p>
+                Future Academies brings together K–12 schools,
+                professional training programmes and higher academic
+                pathways in one educational institution.
+            </p>
+
+            <button class="main-button" onclick="showPage('schools')">
+                Explore Our Schools
+            </button>
+
+            <button class="main-button" onclick="showPage('leadership')">
+                Meet Our Leadership
+            </button>
+
+            <div class="stats">
+
+                <div class="stat">
+                    <h2>3 Pillars</h2>
+                    <p>Schools, Training & Academics</p>
+                </div>
+
+                <div class="stat">
+                    <h2>3,200+</h2>
+                    <p>Students & Trainees</p>
+                </div>
+
+                <div class="stat">
+                    <h2>45+</h2>
+                    <p>Accredited Programs</p>
+                </div>
+
+                <div class="stat">
+                    <h2>98%</h2>
+                    <p>University & Career Success</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="section">
+
+            <h2 class="section-title">Schools • Training • Academics</h2>
+
+            <p>Three divisions guiding learners from school education to professional learning.</p>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h2>K–12 Schools</h2>
+                    <p>Modern schools offering learning from Early Years to Grade 12.</p>
+                    <button class="card-button" onclick="showPage('schools')">
+                        View Our Schools
+                    </button>
+                </div>
+
+                <div class="card">
+                    <h2>Professional Training</h2>
+                    <p>Training workshops, leadership programmes and technical courses.</p>
+                    <button class="card-button" onclick="showPage('leadership')">
+                        Meet Our Leaders
+                    </button>
+                </div>
+
+                <div class="card">
+                    <h2>Higher Academics</h2>
+                    <p>University preparation, academic programmes and student guidance.</p>
+                    <button class="card-button" onclick="showPage('directors')">
+                        Meet Our Directors
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="section two-columns">
+
+            <div> <img src="webiste photos/AMS/AMS 1.jpg"  class="photo" ></div>
+
+            <div>
+                <h2 class="section-title">About Future Academies</h2>
+
+                <h3>A Complete Pathway for Lifelong Learning</h3>
+
+                <p>
+                    At Future Academies, we believe education should be
+                    simple, inspiring and useful. Our schools bring
+                    together teachers, modern facilities and support
+                    for every learner.
+                </p>
+
+                <h3>Our Mission</h3>
+                <p>To provide quality schooling, career training and academic support.</p>
+
+                <h3>Our Vision</h3>
+                <p>To become a leading name in education.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- OUR SCHOOLS PAGE -->
+
+    <main id="schools" class="page">
+
+        <section class="hero">
+            <h1>Our Schools</h1>
+            <p>Our schools form inclusive communities that foster each child’s academic 
+                and personal development with the application of a progressive, dynamic and innovative educational model.Our principals are experienced Emirati educational leaders who have worked within their 
+                communities for many years.</p>
+
+                <p>Principals in our schools have decades of leadership experience. It’s crucial that each community understands the vision, 
+                    mission and values of the school and the characteristics of our schools and what they are able to offer to the community. 
+                    Our students’ safety is our first and most important priority, and in addition to this, our school leaders manage daily activities, 
+                    coordinate curricula, and oversee teachers and other school staff to provide a safe and productive learning environment for students.</p>
+                    
+                    <p>Our Principals are deeply committed to ensuring their schools nurture and develop, not only outstanding academic achievement, 
+                        but a strong sense of self, resilience, compassion, a deep appreciation of the rich diversity of our society and a 
+                        commitment to be of service to the local community and the larger world in which we live.</p>
+        </section>
+
+        <section class="section">
+
+            <h2 class="section-title">Explore Our Schools</h2>
+
+            <p>Click on a school to view more information.</p>
+
+            <div class="cards">
+
+                <div class="card">
+                    <div class="photo"><img src="webiste photos/AMS/AMS 1.jpg"></div>
+                    <h2>Al Mutanabi School</h2>
+                    <p>Cycle 3 , Boys</p>
+                    <p>We Enable Potential By Offering the Highest Educational Standards</p>
+                    <button class="card-button" onclick="showPage('early-years')">
+                        View School Information →
+                    </button>
+                </div>
+
+                <div class="card">
+                    <div class="photo"><img src="webiste photos/ABS/ABS 1.jpeg"></div>
+                    <h2>Al Bayan School</h2>
+                    <p>KG & Cycle 1 , Boys & Girls</p>
+                    <p>We Enable Potential By Offering the Highest Educational Standards</p>
+                    <button class="card-button" onclick="showPage('early-years')">
+                        View School Information →
+                    </button>
+                </div>
+
+                 <div class="card">
+                    <div class="photo"><img src="webiste photos/ABY/"></div>
+                    <h2>Al Mutanabi School</h2>
+                    <p>Cycle 3 , Boys</p>
+                    <p>We Enable Potential By Offering the Highest Educational Standards</p>
+                    <button class="card-button" onclick="showPage('early-years')">
+                        View School Information →
+                    </button>
+                </div>
+
+                 <div class="card">
+                    <div class="photo"><img src="webiste photos/AMS/AMS 1.jpg"></div>
+                    <h2>Al Mutanabi School</h2>
+                    <p>Cycle 3 , Boys</p>
+                    <p>We Enable Potential By Offering the Highest Educational Standards</p>
+                    <button class="card-button" onclick="showPage('early-years')">
+                        View School Information →
+                    </button>
+                </div>
+
+                 <div class="card">
+                    <div class="photo"><img src="webiste photos/AMS/AMS 1.jpg"></div>
+                    <h2>Al Mutanabi School</h2>
+                    <p>Cycle 3 , Boys</p>
+                    <p>We Enable Potential By Offering the Highest Educational Standards</p>
+                    <button class="card-button" onclick="showPage('early-years')">
+                        View School Information →
+                    </button>
+                </div>
+
+                 <div class="card">
+                    <div class="photo"><img src="webiste photos/AMS/AMS 1.jpg"></div>
+                    <h2>Al Mutanabi School</h2>
+                    <p>Cycle 3 , Boys</p>
+                    <p>We Enable Potential By Offering the Highest Educational Standards</p>
+                    <button class="card-button" onclick="showPage('early-years')">
+                        View School Information →
+                    </button>
+                </div>
+
+                 <div class="card">
+                    <div class="photo"><img src="webiste photos/AMS/AMS 1.jpg"></div>
+                    <h2>Al Mutanabi School</h2>
+                    <p>Cycle 3 , Boys</p>
+                    <p>We Enable Potential By Offering the Highest Educational Standards</p>
+                    <button class="card-button" onclick="showPage('early-years')">
+                        View School Information →
+                    </button>
+                </div>
+
+                 <div class="card">
+                    <div class="photo"><img src="webiste photos/AMS/AMS 1.jpg"></div>
+                    <h2>Al Mutanabi School</h2>
+                    <p>Cycle 3 , Boys</p>
+                    <p>We Enable Potential By Offering the Highest Educational Standards</p>
+                    <button class="card-button" onclick="showPage('early-years')">
+                        View School Information →
+                    </button>
+                </div>
+
+                <div class="card">
+                    <div class="photo"><img src="webiste photos/AMS/AMS 1.jpg"></div>
+                    <h2>Al Mutanabi School</h2>
+                    <p>Cycle 3 , Boys</p>
+                    <p>We Enable Potential By Offering the Highest Educational Standards</p>
+                    <button class="card-button" onclick="showPage('early-years')">
+                        View School Information →
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- EARLY YEARS PAGE -->
+
+    <main id="early-years" class="page">
+
+        <section class="hero">
+            <h1> <span style="color: var(--gold);">Al Mutanabi School</span></h1>
+            <p>At Al Mutanabi Charter School, we strive to educate all students to the highest level of academic achievement.
+                 We enable them to reach and expand their potential, preparing them to become productive, responsible, ethical, creative, and compassionate members of society. 
+                 Our highly trained staff engage in ongoing continuous professional development
+                 and we partner with parents to help our students and our community to be their best.</p>
+        </section>
+
+        <section class="section">
+
+            <div class="school-banner"> <img src="webiste photos/Al Mutanabi Graduation Pics/DSC09225.jpg"> </div>
+
+            <div class="school-info">
+
+                <h2>Our Academic approach </h2>
+                <p>
+                    At Al Mutanabi Charter School, our teaching program combines best practices with flexibility around how material is taught and assessed. It offers room for exploration and builds stronger teacher-student relationships, while prioritizing creativity.  
+
+                    Our approach provides students with a one-of-a-kind experience where they have the opportunity to choose certain subjects to study.  
+
+                    We offer a strong foundation with rigorous standards for completing each grade. At the same time, teachers collaborate to create units of work that are centered around students, in ways that encourage them to think out of the box for solutions. 
+                </p>
+
+                <h2>Our Facilities</h2>
+                <p>At Al Mutanabi Charter School, we are proud of our state-of-the-art facilities, which include a robotics laboratory, as well as swimming and performance areas.   
+                 Our facilities support our children to learn, develop and grow not only their knowledge, but also a set of skills they can take into their working lives to become the UAE’s managers and leaders of tomorrow.</p>
+
+                <h2>Working Hours</h2>
+
+                
+                    <p>Mon-Thu: 7:30 AM - 3:30 PM</p>
+                    <p>Friday: 7:30 AM - 12:00 PM</p>
+            
+
+            </div>
+            
+            <button class="back-button" onclick="showPage('schools')">
+                ← Back to Our Schools
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- PRIMARY SCHOOL PAGE -->
+
+    <main id="primary-school" class="page">
+
+        <section class="hero">
+            <h1>Primary School</h1>
+            <p>Building strong foundations for future success.</p>
+        </section>
+
+        <section class="section">
+
+            <button class="back-button" onclick="showPage('schools')">
+                ← Back to Our Schools
+            </button>
+
+            <div class="school-banner">Primary School Photo</div>
+
+            <div class="school-info">
+
+                <h2>About Our School</h2>
+                <p>
+                    Our Primary School focuses on developing
+                    students' knowledge, confidence and creativity.
+                </p>
+
+                <h2>Grade Levels</h2>
+                <p>Grades 1 – 5 (Ages 6–10)</p>
+
+                <h2>Subjects and Learning Areas</h2>
+
+                <ul>
+                    <li>Mathematics</li>
+                    <li>Science</li>
+                    <li>English</li>
+                    <li>Arabic</li>
+                    <li>Coding and technology</li>
+                    <li>Creative arts</li>
+                </ul>
+
+                <h2>Student Development</h2>
+                <p>
+                    Students develop communication, problem-solving,
+                    teamwork and creative thinking skills.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- MIDDLE SCHOOL PAGE -->
+
+    <main id="middle-school" class="page">
+
+        <section class="hero">
+            <h1>Middle School</h1>
+            <p>Developing knowledge, confidence and leadership.</p>
+        </section>
+
+        <section class="section">
+
+            <button class="back-button" onclick="showPage('schools')">
+                ← Back to Our Schools
+            </button>
+
+            <div class="school-banner">Middle School Photo</div>
+
+            <div class="school-info">
+
+                <h2>About Our School</h2>
+                <p>
+                    Middle School helps students improve their
+                    academic knowledge and prepare for the next
+                    stage of their education.
+                </p>
+
+                <h2>Grade Levels</h2>
+                <p>Grades 6 – 8 (Ages 11–13)</p>
+
+                <h2>Learning Activities</h2>
+
+                <ul>
+                    <li>Science and technology projects</li>
+                    <li>Robotics activities</li>
+                    <li>Public speaking</li>
+                    <li>Leadership clubs</li>
+                    <li>Group learning activities</li>
+                    <li>Subject-based projects</li>
+                </ul>
+
+                <h2>Student Development</h2>
+                <p>
+                    Students develop independent thinking,
+                    teamwork and problem-solving skills.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- HIGH SCHOOL PAGE -->
+
+    <main id="high-school" class="page">
+
+        <section class="hero">
+            <h1>High School & University Preparation</h1>
+            <p>Preparing students for higher education and future careers.</p>
+        </section>
+
+        <section class="section">
+
+            <button class="back-button" onclick="showPage('schools')">
+                ← Back to Our Schools
+            </button>
+
+            <div class="school-banner">High School Photo</div>
+
+            <div class="school-info">
+
+                <h2>About Our School</h2>
+                <p>
+                    Our High School programme supports students
+                    as they prepare for university, higher education
+                    and their future careers.
+                </p>
+
+                <h2>Grade Levels</h2>
+                <p>Grades 9 – 12 (Ages 14–18)</p>
+
+                <h2>Academic Support</h2>
+
+                <ul>
+                    <li>Subject-based learning</li>
+                    <li>Examination preparation</li>
+                    <li>Academic guidance</li>
+                    <li>Career guidance</li>
+                    <li>University admission preparation</li>
+                    <li>Personal development activities</li>
+                </ul>
+
+                <h2>Future Opportunities</h2>
+                <p>
+                    Students receive guidance to understand
+                    university options, career pathways and
+                    future study opportunities.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- LEADERSHIP PAGE -->
+
+    <main id="leadership" class="page">
+
+        <section class="hero">
+            <h1>Executive Leadership Team
+</h1>
+            <p>Our diverse and experienced executive team are dedicated to creating inclusive environments and shaping innovative learning experiences for all New Century students in the Middle East. </p>
+        </section>
+
+        <section class="section">
+
+            <div class="cards">
+
+                <div class="card">
+                    <div class="photo"><img src="webiste photos/dina.jpg"></div>
+                    <h2>Dina Khuffash</h2>
+                    <p>CEO</p>
+                    <p>The CEO of NCE, leading the strategic, academic, and operational performance of eight charter schools across Abu Dhabi
+                         and Al Ain. With over 25 years of experience in the Middle East, she brings expertise in school improvement, educational leadership, quality assurance, 
+                         and system transformation. Recognized for driving sustainable improvement and translating strategy into measurable impact.</p>
+                </div>
+
+                <div class="card">
+                    <div class="photo"><img src="webiste photos/arna.jpg"></div>
+                    <h2>Arnna Graham</h2>
+                    <p>Executive Director of Schools </p>
+                    <p>Executive Director of Schools at NCE, leading the educational and strategic direction across all schools. With over 30 years of international experience in New Zealand and the UAE, she is recognized for
+                     expertise in leadership development, curriculum design, school improvement, and international accreditation.</p>
+                </div>
+
+                <div class="card">
+                    <div class="photo"><img src="webiste photos/nader.jpg"></div>
+                    <h2>Nader Deis </h2>
+                    <p>Head of Support Services</p>
+                    <p>Head of Support Services at NCE, overseeing HR, Finance, Procurement, Operations, and IT. With over 15 years of experience across the UAE and the United States, he brings expertise in human capital, education advisory, 
+                    and operational excellence, driving efficiency and strengthening school performance.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- EXECUTIVE DIRECTORS PAGE -->
+
+    <main id="directors" class="page">
+
+        <section class="hero">
+            <h1>Executive Directors</h1>
+            <p>Meet the people guiding the future of Future Academies.</p>
+        </section>
+
+        <section class="section">
+
+            <div class="cards">
+
+                <div class="card">
+                    <div class="photo">Executive Photo</div>
+                    <h2></h2>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                <div class="card">
+                    <div class="photo">Executive Photo</div>
+                    <h2></h2>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                <div class="card">
+                    <div class="photo">Executive Photo</div>
+                    <h2></h2>
+                    <p></p>
+                    <p></p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- CONTACT SECTION -->
+
+    <section id="contact-info" class="section">
+
+        <h2>Campus & Admissions Information</h2>
+
+        <p>Contact us by phone or email.</p>
+
+        <div class="contact-details">
+
+            <div class="contact-box">
+                <h3>Location</h3>
+                <p>CI Tower, Al Bateen Street, 
+Abu Dhabi, 
+United Arab Emirates.</p>
+            </div>
+
+            <div class="contact-box">
+                <h3>Phone & Hours</h3>
+                <p>+971 000 0000</p>
+                <p>Monday–Friday, 9:00 AM – 4:00 PM</p>
+            </div>
+
+            <div class="contact-box">
+                <h3>Email</h3>
+                <p>info@futureacademies.edu</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <img src="webiste photos/Logo White.png"
+                    class="footer-logo" alt="Future Academies Logo">
+
+                <h2>FUTURE ACADEMIES</h2>
+
+                <p>
+                    Helping students learn, grow and build strong character.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+
+                <a href="#" onclick="showPage('home'); return false;">Home</a>
+                <a href="#" onclick="showPage('schools'); return false;">Our Schools</a>
+                <a href="#" onclick="showPage('leadership'); return false;">Our Leadership Team</a>
+                <a href="#" onclick="showPage('directors'); return false;">Executive Directors</a>
+            </div>
+
+            <div>
+                <h3>Contact Us</h3>
+                <p>CI Tower, Al Bateen Street, 
+Abu Dhabi, 
+United Arab Emirates.</p>
+                <p>Phone: 00000000</p>
+                <p>Email: info@futureacademies.ae</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 Future Academies. All Rights Reserved.</span>
+            <span>Schools | Training | Academics</span>
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js" defer></script>
+</body>
+</html>
