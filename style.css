@@ -1,423 +1,587 @@
+
 * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #FAF8F5;
-            color: #333;
-        }
-
-        :root {
-            --maroon: #5C0F28;
-            --dark: #2A0411;
-            --gold: #D5B56E;
-            --cream: #FAF8F5;
-            --light: #F5EEDF;
-        }
-
-
-        /* HEADER */
-
-        header {
-            background: white;
-            padding: 15px 6%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid var(--gold);
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-
-        .logo {
-            width: 160px;
-            height: 60px;
-            object-fit: contain;
-        }
-
-        nav button {
-            background: none;
-            border: none;
-            padding: 12px;
-            color: var(--maroon);
-            font-size: 15px;
-            cursor: pointer;
-        }
-
-        nav button:hover {
-            background: var(--maroon);
-            color: white;
-            border-radius: 5px;
-        }
-
-        .menu-button {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 25px;
-            color: var(--maroon);
-            cursor: pointer;
-        }
-
-        #mobileMenu {
-            display: none;
-            background: white;
-            padding: 15px;
-        }
-
-        #mobileMenu button {
-            display: block;
-            width: 100%;
-            padding: 12px;
-            background: white;
-            border: none;
-            text-align: left;
-            color: var(--maroon);
-            font-size: 16px;
-        }
-
-
-        /* PAGE NAVIGATION */
-
-        .page {
-            display: none;
-        }
-
-        .page.active {
-            display: block;
-        }
-
-
-        /* TOP BANNER */
-
-        .hero {
-            background: linear-gradient(120deg, var(--dark), var(--maroon));
-            height: 800px;
-            color: white;
-            padding: 70px 8%;
-            border-bottom: 1px solid var(--gold);
-            
-        }
-
-        .hero h1 {
-            font-size: 60px;
-            max-width: 750px;
-        }
-
-        .hero p {
-            max-width: 1200px;
-            line-height: 1.7;
-        }
-
-        .main-button {
-            background: var(--gold);
-            color: var(--dark);
-            padding: 13px 22px;
-            border: none;
-            border-radius: 5px;
-            font-weight: bold;
-            cursor: pointer;
-            margin: 8px 8px 8px 0;
-        }
-
-        .main-button:hover {
-            background: white;
-            color: var(--maroon);
-        }
-
-
-        /* SECTIONS */
-
-        .section {
-            padding: 55px 8%;
-        }
-
-        .section-title {
-            color: var(--maroon);
-        }
-
-        .section-title::after {
-            content: "";
-            display: block;
-            width: 55px;
-            height: 4px;
-            background: var(--gold);
-            margin-top: 10px;
-        }
-
-
-        /* CARDS */
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 22px;
-            margin-top: 30px;
-        }
-
-        .card {
-            background: white;
-            padding: 40px;
-            border: 1px solid #E5D6B5;
-            border-top: 4px solid var(--maroon);
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(42, 4, 17, 0.06);
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(42, 4, 17, 0.12);
-        }
-
-        .card h2 {
-            color: var(--maroon);
-        }
-
-        .card p {
-            color: #555;
-            line-height: 1.7;
-        }
-
-        .card-button {
-            background: var(--maroon);
-            color: white;
-            padding: 11px 18px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .card-button:hover {
-            background: var(--dark);
-        }
-
-
-        /* PHOTOS */
-
-        .photo {
-            height: 400px;
-            background: var(--light);
-            color: var(--maroon);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 7px;
-            margin-bottom: 20px;
-            overflow: hidden;
-        }
-
-        .photo img {
-            width: 100%;
-            height: 100%;
-            object-fit: fill;
-        }
-
-        
-        /* HOME PAGE STATS */
-
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 15px;
-            margin-top: 40px;
-        }
-
-        .stat {
-            padding: 20px;
-            border: 0.01px solid var(--light);
-            background: rgba(255,255,255,0.1);
-            border-radius: 10px;
-        }
-
-        .stat h2 {
-            color: var(--gold);
-        }
-
-
-        /* SCHOOL INFORMATION */
-
-        .school-info {
-            background: white;
-            padding: 30px;
-            border: 1px solid #E5D6B5;
-            border-radius: 10px;
-        }
-
-        .school-info h2 {
-            color: var(--maroon);
-            margin-top: 25px;
-            margin-bottom: 25px;
-        }
-
-        .school-info li {
-            line-height: 2;
-        }
-
-        .school-banner {
-            height: 600px;
-            background: var(--light);
-            color: var(--maroon);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-            margin-bottom: 25px;
-            overflow: hidden;
-        }
-
-        .school-banner img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .back-button {
-            background: var(--maroon);
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-bottom: 25px;
-            margin-top: 25px;
-        }
-
-
-        /* ABOUT SECTION */
-
-        .two-columns {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            align-items: center;
-        }
-
-
-        /* CONTACT SECTION */
-
-        #contact-info {
-            background: var(--dark);
-            color: white;
-            border-top: 5px solid var(--gold);
-        }
-
-        .contact-details {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .contact-box {
-            padding: 20px;
-            border: 1px solid var(--gold);
-            border-radius: 8px;
-        }
-
-        .contact-box h3 {
-            color: var(--gold);
-        }
-
-
-        /* FOOTER */
-
-        footer {
-            background: #21030D;
-            color: white;
-            padding: 45px 8% 20px;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            gap: 30px;
-            padding-bottom: 25px;
-            border-bottom: 1px solid #6A4A51;
-        }
-
-        .footer-logo {
-            width: 160px;
-            height: 65px;
-            object-fit: contain;
-        }
-
-        footer h3 {
-            color: var(--gold);
-        }
-
-        footer a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            margin: 10px 0;
-        }
-
-        footer a:hover {
-            color: var(--gold);
-        }
-
-        .footer-bottom {
-            display: flex;
-            justify-content: space-between;
-            padding-top: 20px;
-            font-size: 13px;
-        }
-
-
-        /* MOBILE DESIGN */
-
-        @media (max-width: 850px) {
-
-            nav {
-                display: none;
-            }
-
-            .menu-button {
-                display: block;
-            }
-
-            .cards {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .stats {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 550px) {
-
-            .cards,
-            .stats,
-            .two-columns,
-            .contact-details,
-            .footer-content {
-                grid-template-columns: 1fr;
-            }
-
-            .hero {
-                padding: 45px 6%;
-            }
-
-            .hero h1 {
-                font-size: 30px;
-            }
-
-            .section {
-                padding: 40px 6%;
-            }
-
-            .school-banner {
-                height: 200px;
-            }
-
-            .footer-bottom {
-                flex-direction: column;
-                gap: 10px;
-                text-align: center;
-            }
-
-        }
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #FAF8F5;
+    color: #333;
+}
+
+:root {
+    --maroon: #5C0F28;
+    --dark: #2A0411;
+    --gold: #D5B56E;
+    --cream: #FAF8F5;
+    --light: #F5EEDF;
+}
+
+
+/* HEADER */
+
+header {
+    background: white;
+    padding: 15px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--gold);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    width: 160px;
+    height: 60px;
+    object-fit: contain;
+}
+
+nav button {
+    background: none;
+    border: none;
+    padding: 12px;
+    color: var(--maroon);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background: var(--maroon);
+    color: white;
+    border-radius: 5px;
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 25px;
+    color: var(--maroon);
+    cursor: pointer;
+}
+
+#mobileMenu {
+    display: none;
+    background: white;
+    padding: 15px;
+}
+
+#mobileMenu button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: white;
+    border: none;
+    text-align: left;
+    color: var(--maroon);
+    font-size: 16px;
+}
+
+
+/* PAGE NAVIGATION */
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+
+/* TOP BANNER */
+
+.hero {
+    background: linear-gradient(120deg, var(--dark), var(--maroon));
+    height: 800px;
+    color: white;
+    padding: 70px 8%;
+    border-bottom: 1px solid var(--gold);
+}
+
+.hero h1 {
+    font-size: 60px;
+    max-width: 750px;
+}
+
+.hero p {
+    max-width: 1200px;
+    line-height: 1.7;
+}
+
+.main-button {
+    background: var(--gold);
+    color: var(--dark);
+    padding: 13px 22px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 8px 8px 8px 0;
+}
+
+.main-button:hover {
+    background: white;
+    color: var(--maroon);
+}
+
+
+/* SECTIONS */
+
+.section {
+    padding: 55px 8%;
+}
+
+.section-title {
+    color: var(--maroon);
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 4px;
+    background: var(--gold);
+    margin-top: 10px;
+}
+
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border: 1px solid #E5D6B5;
+    border-top: 4px solid var(--maroon);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(42, 4, 17, 0.06);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(42, 4, 17, 0.12);
+}
+
+.card h2 {
+    color: var(--maroon);
+}
+
+.card p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.card-button {
+    background: var(--maroon);
+    color: white;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-button:hover {
+    background: var(--dark);
+}
+
+
+/* PHOTOS */
+
+.photo {
+    height: 400px;
+    background: var(--light);
+    color: var(--maroon);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+
+/* HOME PAGE STATS */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.stat {
+    padding: 20px;
+    border: 0.01px solid var(--light);
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+
+.stat h2 {
+    color: var(--gold);
+}
+
+
+/* SCHOOL INFORMATION */
+
+.school-info {
+    background: white;
+    padding: 30px;
+    border: 1px solid #E5D6B5;
+    border-radius: 10px;
+}
+
+.school-info h2 {
+    color: var(--maroon);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.school-info li {
+    line-height: 2;
+}
+
+.school-banner {
+    height: 600px;
+    background: var(--light);
+    color: var(--maroon);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.school-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.back-button {
+    background: var(--maroon);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+
+/* ABOUT SECTION */
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+
+/* CONTACT SECTION */
+
+#contact-info {
+    background: var(--dark);
+    color: white;
+    border-top: 5px solid var(--gold);
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.contact-box {
+    padding: 20px;
+    border: 1px solid var(--gold);
+    border-radius: 8px;
+}
+
+.contact-box h3 {
+    color: var(--gold);
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #21030D;
+    color: white;
+    padding: 45px 8% 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #6A4A51;
+}
+
+.footer-logo {
+    width: 160px;
+    height: 65px;
+    object-fit: contain;
+}
+
+footer h3 {
+    color: var(--gold);
+}
+
+footer a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+footer a:hover {
+    color: var(--gold);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    font-size: 13px;
+}
+
+
+/* TABLET RESPONSIVE DESIGN */
+
+@media (max-width: 850px) {
+
+    nav {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contact-details {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer-content {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 500px;
+        padding: 55px 6%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .school-banner {
+        height: 350px;
+    }
+}
+
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media (max-width: 550px) {
+
+    /* HEADER */
+
+    header {
+        padding: 10px 5%;
+    }
+
+    .logo {
+        width: 125px;
+        height: 50px;
+    }
+
+    .menu-button {
+        font-size: 25px;
+    }
+
+    #mobileMenu {
+        padding: 10px 5%;
+    }
+
+    #mobileMenu button {
+        padding: 14px 10px;
+        font-size: 15px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        height: auto;
+        min-height: 450px;
+        padding: 45px 6%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        line-height: 1.3;
+    }
+
+    .hero p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .main-button {
+        margin: 8px 5px 8px 0;
+        max-width: 100%;
+    }
+
+
+    /* SECTIONS */
+
+    .section {
+        padding: 35px 6%;
+    }
+
+
+    /* CARDS */
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+
+    /* STATS */
+
+    .stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .stat {
+        padding: 15px;
+    }
+
+
+    /* PHOTOS */
+
+    .photo {
+        height: 230px;
+    }
+
+    .photo img {
+        object-fit: cover;
+    }
+
+
+    /* SCHOOL INFORMATION */
+
+    .school-info {
+        padding: 20px;
+    }
+
+    .school-info h2 {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .school-banner {
+        height: 220px;
+    }
+
+
+    /* ABOUT */
+
+    .two-columns {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    /* CONTACT */
+
+    .contact-details {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .contact-box {
+        padding: 18px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    footer {
+        padding: 35px 6% 20px;
+    }
+
+    .footer-logo {
+        width: 140px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+
+/* SMALL MOBILE DEVICES */
+
+@media (max-width: 350px) {
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .section {
+        padding: 30px 5%;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+}
